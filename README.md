@@ -8,3 +8,10 @@ webpack插件尝试
  * compilation代表了一个单一构建版本的物料。在webpack中间件运行时，
  每当一个文件发生改变时就会产生一个新的compilation从而产生一个新的变异后的物料集合。
  compilation列出了很多关于当前模块资源的信息，编译后的资源信息，改动过的文件，以及监听过的依赖。compilation也提供了插件需要自定义功能的回调点。
+ 
+ 具体插件可以参考`app/my-plugin.js`和`webpack.config.js`
+ 
+ loader
+ -
+ 
+ 在工程的node_modules下面新建一个文件夹html-template-loader，在里面创建一个index.js做为这个loader的js文件。这样就可以在webpack.config.js里面添加一个loader了。`index.js`只需要满足相应的接口，如`app/my-loader.js`即可
